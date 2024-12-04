@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+   .container1{
+    height: 50vh;
+   }
+   .cover-container {
+    position: relative;
+    width: 100vw;
+    height: 200vh; /* Full viewport height */
+    background-image: url('./extra1.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    color:black; /* Text color */
+    border-radius: 10px;
+    
+}
+.plan-features{
+  justify-content: center;
+  align-items: center;
+}
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.px-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.p-3 {
+    padding: 1rem; /* Add padding */
+}
+
+
+................
+.container{
+  display: inline;
+}
+.pricing-container{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        height: 50vh;
+        flex-wrap: wrap;
+        
+
+      }
+      .pricing-plan{
+        border-radius: 10px;
+        background-color: lightskyblue;
+       text-align: center;
+       flex: 1;
+       max-width: 400px;
+       padding: 20px;
+      }
+      .plan-title{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        font-weight: bolder;
+       
+      }
+      .plan-price{
+        font-size: 2rem;
+        font-weight: bolder;
+        
+      }
+      .plan-features>*{
+        font-size: small;
+        gap:2rem;
+       list-style: none;
+        margin-bottom: 20px;
+      }
+      .plan-button{
+        margin: 10\%;
+        padding: 5px;
+        background-color: orangered;
+        border-radius: 10px;
+        color: white;
+        
+      
+      }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./larana.jpeg" height="30" >Femi Realty Group</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Architectual Designs" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>  
+  
+ 
+
+
+
+<div class="container1" >
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" >
+    
+    <main class="px-3">
+      <h1>Interested in buying a property?</h1>
+      <p class="lead"> In a world woven from dreams and whispers,
+        where moments dance like sunlight on water,
+        this space invites you to pause, to breathe,
+        and to embrace the beauty that unfolds.</p>
+      <p class="lead">
+        <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">About us </a>
+      </p>
+    </main>
+  
+   
+  </div>
+</div>
+
+
+
+
+
+  
+
+   <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis"> Femi Realty: Where Dreams Find Home.</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Welcome to The Femi Realty Group, where your dream home becomes a reality! 
+        With years of experience in the real estate industry, we pride ourselves on our commitment
+         to excellence and customer satisfaction. Our dedicated team of professionals is here to guide
+          you through every step of buying, selling, or investing in real estate. Whether you're a first-time 
+          homebuyer or an experienced investor, we leverage our extensive market knowledge and innovative strategies 
+          to help you achieve your goals. At Dew-Markwin, we don’t just find houses; we build lasting relationships 
+          and create communities. Let us help you navigate the world of real estate with confidence!.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">UNIQUE DESIGN AESTHETIC </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">EXQUISITE LUXURY LIVING</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 50vh;">
+      <div class="container px-5">
+        <img src="./Architecture.webp" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="1000" loading="lazy">
+      </div>
+    </div>
+  </div> 
+<div class="container">
+  <div class="container px-4 py-5" id="featured-3"></div>
+    <h2 class="pb-2 border-bottom">Enhanced Living Experience</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" >
+      
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          
+          <img src="./bus-front.svg" height="30px">
+          
+        </div>
+        
+        <h3 class="fs-2 text-body-emphasis">Minimalism In Every Detail</h3>
+        <p>Structures are designed with uncluttered lines and open spaces, allowing for natural light and a sense of calm.
+        </br>Materials and finishes are chosen for their durability and aesthetic appeal, rather than sheer volume,
+         </br>leading to thoughtful and sustainable choices .</p>
+        <a href="#" class="icon-link">
+          EXQUISITE LUXURY LIVING
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./box-seam.svg" height="30px">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Unique Aesthetic Design
+        </h3>
+        <p>Minimalist designs often transcend trends, creating enduring spaces that remain appealing over time, we also Incorporating natural elements and
+           green spaces fosters a harmonious relationship between the built environment and the surrounding landscape.</p>
+        <a href="#" class="icon-link">
+          ENERGY EFFICIENCY
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./briefcase.svg" height="30px">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">High Quality Construction</h3>
+        <p>Using top-tier materials—such as reinforced concrete, energy-efficient windows, and sustainable finishes—enhances
+           the longevity and performance of the structure, we employ experienced craftsmen and builders guarantees precision and
+            attention to detail in every phase of construction, from framing to finishing.</p>
+        <a href="#" class="icon-link">
+          WORLD CLASS INNOVATION
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container" >
+  <h1>Starting Prices </h1>
+  <hr/>
+<div class="pricing-container">
+  <div class="pricing-plan">
+    <div class="plan-title">The Araana Building Project </div>
+    <div class="plan-price">$9,000.99/month</div>
+    <ul class="plan-features">
+      <li>✅ 5 bedroom appartment</li>
+      <li>✅ Swimming pool</li>
+      <li>✅ Elevator</li>
+      <li>🚫 24/7 Support</li>
+    </ul>
+    <button class="plan-button"> Project</button>
+  </div>
+  <div class="pricing-plan">
+    <div class="plan-title"> Casa dell’Arte</div>
+    <div class="plan-price">$20,000.99/month</div>
+    <ul class="plan-features">
+      <li>✅ 5 town hall</li>
+      <li>✅ Sky lounge</li>
+      <li>✅ Gym</li>
+      <li>✅ 24/7 gated security </li>
+      
+    </ul>
+    <button class="plan-button">Project</button>
+  </div>
+  <div class="pricing-plan">
+    <div class="plan-title"> Residenza del Mare</div>
+    <div class="plan-price">$40,000.99/month</div>
+    <ul class="plan-features">
+      <li>✅ Landscape maintenance</li>
+      <li>✅ Video Entry System</li>
+      <li>✅ Drinking water purification System</li>
+      <li>✅ 24/7 Support</li>
+    </ul>
+    <button class="plan-button"> Project </button>
+  </div>
+</div>
+</div>
+
+<div class="containr">
+  <div id="carouselExampleCaptions" class="carousel slide">
+
+  <div class="carousel-indicators">
+
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+
+      <img src="./femi-1.jpeg.png" height="800px" class="d-block w-100" alt="...">
+
+      <div class="carousel-caption d-none d-md-block">
+
+        <h5>The Aranaa Building Project</h5>
+
+        <p>The Araana Building Project is an exclusive property known for its magnifiscence and it is
+          located in one of Limassol’s most prestigious areas. 
+          This project has been redeveloped and redesigned by Femi Realty.</p>
+
+      </div>
+
+    </div>
+
+    <div class="carousel-item">
+
+      <img src="./femi-2.jpg.webp" height="800px"  class="d-block w-100" alt="...">
+
+      <div class="carousel-caption d-none d-md-block">
+
+        <h5>Casa dell’Arte </h5>
+
+        <p>Casa dell’Arte is a captivating name that translates to "House of Art." 
+          This title suggests a space that celebrates creativity, beauty, and inspiration 
+          Envisioned as a vibrant hub for artistic expression, Casa dell’Arte could be designed to 
+          showcase various art forms, from visual arts to performances. The building itself might feature open galleries, 
+          studios for artists, and communal spaces for workshops and exhibitions, fostering a dynamic cultural environment.</p>
+        
+
+      </div>
+
+    </div>
+
+
+    <div class="carousel-item">
+
+      <img src="./femi-3.jpg.webp" height="800px"  class="d-block w-100" alt=".">
+
+      <div class="carousel-caption d-none d-md-block">
+
+        <h5>Residenza del Mare</h5>
+
+        <p>With a focus on aesthetics, Residenza del Mar would blend modern design with artistic elements, creating a visually stunning
+           and welcoming atmosphere. It serves not only as a residence but as a sanctuary for artists and art lovers alike, where creativity 
+           thrives and community flourishes.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+ 
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+    <span class="visually-hidden">Previous</span>
+
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    <span class="visually-hidden">Next</span>
+
+  </button>
+
+ </div>
+
+
+
+
+
+
+
+
+ <div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <p class="text-body-secondary">© 2024</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+
+    <div class="col mb-3">
+      <h5>Stay Connected</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Discover more</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investors</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help and support</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sitemap</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Join Our Journey</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Get free credit</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Write for us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Legal stuff</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
